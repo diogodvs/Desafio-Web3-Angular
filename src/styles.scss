@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$palette:(
+    preto:(
+        300: #3F3F46,
+        400: #27272A,
+        500: #3E3E41,
+        600: #1C1C1C,
+        700: #09090A
+    ),
+    cinza:(
+        300: #C6C6D3,
+        400: #A1A1AA,
+
+    ),
+    branco: (
+        900: #ffffff,  
+        600: #F0F0F0,
+        400: #EDEDED,
+    )
+);
+
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+      $map: map-get($map, $key);
+    }
+    @return $map;
+  };
+
+@function palette($color, $fill){
+    $color: map-deep-get($palette, $color, $fill);
+    @return $color;
+}; 
