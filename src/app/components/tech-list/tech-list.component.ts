@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class TechListComponent {
 
+  stacks = 
+  [
+    {id:1, name: 'Java'},
+    {id:2, name: 'SpringBoot'},
+    {id:3, name: 'React'},
+    {id:4, name: 'VueJs'},
+    {id:5, name: 'Javascript'},
+    {id:6, name: 'TypeScript'},
+    {id:7, name: 'Tailwind Css'},
+    {id:8, name: 'Styled Components'},
+    {id:9, name: 'Angular'},
+    {id:9, name: 'SQL'},
+    {id:9, name: 'Node'},
+  ]
 }
+

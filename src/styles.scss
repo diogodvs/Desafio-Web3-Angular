@@ -2,36 +2,23 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: var(--preto-700);
 }
 
-$palette:(
-    preto:(
-        300: #3F3F46,
-        400: #27272A,
-        500: #3E3E41,
-        600: #1C1C1C,
-        700: #09090A
-    ),
-    cinza:(
-        300: #C6C6D3,
-        400: #A1A1AA,
+:root {
+    
+        --preto-300: #3F3F46,
+        --preto-400: #27272A,
+        --preto-500: #3E3E41,
+        --preto-600: #1C1C1C,
+        --preto-700: #09090A,
+        
+        --cinza-300: #C6C6D3,
+        --cinza-400: #A1A1AA,
+    
+        --branco-900: #ffffff,  
+        --branco-600: #F0F0F0,
+        --branco-400: #EDEDED,
+    
+};
 
-    ),
-    branco: (
-        900: #ffffff,  
-        600: #F0F0F0,
-        400: #EDEDED,
-    )
-);
-
-@function map-deep-get($map, $keys...) {
-    @each $key in $keys {
-      $map: map-get($map, $key);
-    }
-    @return $map;
-  };
-
-@function palette($color, $fill){
-    $color: map-deep-get($palette, $color, $fill);
-    @return $color;
-}; 

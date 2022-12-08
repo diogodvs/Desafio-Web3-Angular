@@ -1,6 +1,27 @@
 <div class="main">
     <app-header-component></app-header-component>
-    <app-body-to-translate></app-body-to-translate>
-    <app-tech-list></app-tech-list>
-    <app-switcher-languages></app-switcher-languages>
+    <div class="txt-tranlate">
+        <h1>
+            {{locales[i]}}
+        </h1>
+    </div>
+
+    <app-tech-list></app-tech-list> 
+    
+    <section class="btns">
+        <button (click)="setIndex(0)">
+            <img src="../../../assets/images/bra.icon.svg" alt="Brazilian Flag">
+            <p>{{localesCountryPt[i]}}</p>
+        </button>
+
+        <button (click)="setIndex(1)">
+            <img src="../../../assets/images/eua.icon.svg" alt="United States Flag">
+            <p>{{localesCountryEn[i]}}</p>
+        </button>
+
+        <button (click)="setIndex(2)">
+            <img src="../../../assets/images/spa.icon.svg" alt="Spanish Flag">
+            <p>{{localesCountryEs[i]}}</p>
+        </button>
+    </section>
 </div>

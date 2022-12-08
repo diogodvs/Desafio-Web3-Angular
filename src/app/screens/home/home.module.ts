@@ -4,9 +4,6 @@ import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { ComponentsModule } from "../../components/components.module";
 
-
-
-
 @NgModule({
     declarations: [
         HomeComponent

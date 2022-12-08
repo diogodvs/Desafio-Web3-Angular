@@ -1,0 +1,32 @@
+
+div{
+    width: 49.56rem;
+    display: flex;
+    margin: auto;
+    background-color: #27272A;
+    color: #EDEDED;
+    border: solid 1px;
+    border-radius: 0.5rem;
+    border-color: rgb(243, 145, 17);
+    height: 11rem ;
+    flex-direction: column;
+
+    ul{
+        line-height: 2rem;
+        font-size: 1.1rem;
+        margin: 0.50rem 8rem;
+        height: 11rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+        
+
+        li{
+            width: 15rem;
+            
+        }
+    }
+}
+
